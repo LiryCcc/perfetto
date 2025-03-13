@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.base.json",
-  "include": [ "src/**/*" ],
+  "include": ["src/**/*"],
   "exclude": [
     "./node_modules/",
     "./src/test/diff_viewer/",
@@ -12,13 +12,13 @@
   "compilerOptions": {
     "outDir": "./out/tsc",
     "lib": [
-      "dom",                               // Need to be explicitly mentioned now since we're overriding default included libs.
-      "es2022",                            // Need this to use Promise.allSettled, replaceAll, etc
+      "dom", // Need to be explicitly mentioned now since we're overriding default included libs.
+      "es2022" // Need this to use Promise.allSettled, replaceAll, etc
     ],
     "paths": {
-      "*" : ["*", "./node_modules/@tsundoku/micromodal_types/*"]
+      "*": ["*", "./node_modules/@tsundoku/micromodal_types/*"]
     },
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   }
 }

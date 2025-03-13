@@ -78,6 +78,7 @@
   },
   "scripts": {
     "build": "node build.js",
+    "format": "prettier . --write --cache",
     "test": "node build.js --run-unittests",
     "lint": "npx eslint . --ext .js,.ts"
   }
